@@ -8,6 +8,9 @@ app.use(cors());
 app.use(express.json());
 app.use(authRoutes);
 app.use(createPost);
+app.get("/", (req, res) => {
+  res.json({ message: "Hello I am Backend" });
+});
 mongoose.connect(process.env.Mongo_url as string, {
   dbName: "Social_media_backend",
 });
