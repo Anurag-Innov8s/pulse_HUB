@@ -15,7 +15,7 @@ export default function User() {
   useEffect(() => {
     const fetchUserInfo=async()=>{
       try {
-        const response = await fetch('http://localhost:5000/getProfile',
+        const response = await fetch('https://pulse-hub-zdc2.vercel.app/getProfile',
           {
             method: "GET",
             headers: {

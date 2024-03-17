@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 import { toast } from "sonner";
 
 import PostCard from "../components/Post/PostCard";
-const API_BASE_URL = "http://localhost:5000";
+const API_BASE_URL = "https://pulse-hub-zdc2.vercel.app/";
 const CLOUDINARY_UPLOAD_URL =
   "https://api.cloudinary.com/v1_1/pulsehubcloud/image/upload";
 const UPLOAD_PRESET = "pulsehub";

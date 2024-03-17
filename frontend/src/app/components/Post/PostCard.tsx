@@ -8,7 +8,7 @@ export default function PostCard(props: any) {
   const token = typeof window !== "undefined" && localStorage.getItem("token");
   const addLike = async (postId: any) => {
     try {
-      const response = await fetch(`http://localhost:5000/like`, {
+      const response = await fetch(`https://pulse-hub-zdc2.vercel.app/like`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

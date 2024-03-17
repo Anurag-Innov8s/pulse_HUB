@@ -59,7 +59,7 @@ export default function CreatePost() {
       }
     }
     try {
-      const response = await fetch("http://localhost:5000/post", {
+      const response = await fetch("https://pulse-hub-zdc2.vercel.app/post", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

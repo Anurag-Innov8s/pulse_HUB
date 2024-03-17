@@ -23,7 +23,7 @@ const PostRender = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/getPosts?page=${page}&limit=5`
+          `https://pulse-hub-zdc2.vercel.app/getPosts?page=${page}&limit=5`
         );
         if (!response.ok) {
           throw new Error("Network response was not ok");
